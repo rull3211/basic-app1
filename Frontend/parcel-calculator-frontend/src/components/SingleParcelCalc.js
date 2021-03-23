@@ -11,8 +11,8 @@ const SingleParcelCalc = props =>{
             <div className ="VektWrapper">
                 <div className ="KgDescriptor">Vekt på pakken</div>
                 <select onChange = {props.weightHandler} className ="Kg">
-                    {liste.map(el =>{
-                        return <option>{el}</option>
+                    {liste.map((el, index) =>{
+                        return <option key ={index}>{el}</option>
                     })}
                 </select>
             </div>

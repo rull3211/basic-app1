@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class PrisEntity {
+public class PrisEntity { // dette blir databaseskjemaet med objekter som rader og instansvariabler som kolonner
 
     public PrisEntity(){}
     public PrisEntity(int basePrice, int packetPrice, int weightPrice) {

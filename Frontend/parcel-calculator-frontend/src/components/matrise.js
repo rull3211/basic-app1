@@ -22,14 +22,14 @@ class Matrise extends Component {
                 {(<div>
                     <div className ="Row">
                         <div className = "MatriseElement">-</div>
-                        {this.pakker.map(el =>{
-                            return <div className = "MatriseElement">Antall Pakker: {el}</div>
+                        {this.pakker.map((el, index) =>{
+                            return <div key={index} className = "MatriseElement">Antall Pakker: {el}</div>
                         })}
                     </div>
                     {this.state.matrisedata.map((el, index) =>{
-                    return (<div className = "Row"><div className = "MatriseElement"> Vekt i kg {index+1} </div>
-                        {el.map(mel => {
-                            return <MatriseElement price = {mel}></MatriseElement>    
+                    return (<div className = "Row"><div  className = "MatriseElement"> Vekt i kg {index+1} </div>
+                        {el.map((mel, index) => {
+                            return <MatriseElement key = {index} price = {mel}></MatriseElement>    
                         })}
                     </div>)
                 })}
