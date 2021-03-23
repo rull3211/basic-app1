@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="C:\Users\bence\Desktop\basic-app1\target/classes/public">
+    <fileset dir="C:\Users\bence\Desktop\basic-app1/frontend/build"/>
+  </copy>
+</target>
+</project>
