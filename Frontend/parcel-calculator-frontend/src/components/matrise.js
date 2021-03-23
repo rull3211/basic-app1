@@ -8,7 +8,7 @@ class Matrise extends Component {
     }
     
     componentDidMount(){
-        ApiService.getPrices("mP?weight=6&count=8&prisid=1").then(response => {
+        ApiService.getPrices("mp?weight=6&count=8&prisid=1").then(response => {
         this.setState({matrisedata : response.data })
     })
     }

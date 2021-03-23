@@ -20,29 +20,29 @@ public class PriceController {
         return this.prisRepository.findAll();
     }
 
-    @RequestMapping(path = "sP", method = RequestMethod.GET)
+    @RequestMapping(path = "sp", method = RequestMethod.GET)
     public int getSingleParcel(@RequestParam("weight") int weight,
                         @RequestParam("count") int count,
                         @RequestParam("prisid") long id)
     {
         PrisEntity price = this.prisRepository.findById(id);
-        int base = price.getBasePrice();
-        int packet = price.getPacketPrice();
-        int weightp = price.getWeightPrice();
+        final int base = price.getBasePrice();
+        final int packet = price.getPacketPrice();
+        final int weightp = price.getWeightPrice();
         int total = (weight*count * weightp) + (packet*count) + base;
 
         return total;
 
     }
-    @RequestMapping(path = "mP", method = RequestMethod.GET)
+    @RequestMapping(path = "mp", method = RequestMethod.GET)
     public int[][] getMultipleParcels(@RequestParam("weight") int weight,
                                @RequestParam("count") int count,
                                @RequestParam("prisid") long id)
     {
         PrisEntity price = this.prisRepository.findById(id);
-        int base = price.getBasePrice();
-        int packet = price.getPacketPrice();
-        int weightp = price.getWeightPrice();
+        final int base = price.getBasePrice();
+        final int packet = price.getPacketPrice();
+        final int weightp = price.getWeightPrice();
         int[][] liste = new int[weight][count];
         for(int i = 0; i < weight; i++){
             for(int k = 0 ; k < count; k++){
