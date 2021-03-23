@@ -33,15 +33,27 @@ class App extends Component{
       </div>
       <div className = "MainContent">
         <div className ="MainContentWrapper">
-          <Matrise></Matrise>
-        
-          <SingleParcelCalc  
-            weightHandler = {this.weightHandler} 
-            clickHandler = {this.clickHandler} 
-            countHandler = {this.countHandler} 
-            price = {this.state.price}>
-          </SingleParcelCalc>
-
+          <div className ="Bg">
+            <Matrise></Matrise>
+            <div className = "Info">
+              <p>
+                Prisen På pakkene regnes ut basert på antall pakker, totalvekt og en basisavgift.
+              </p>
+              <p>Basisavgift = 50kr</p>
+              <p>Pakker = 10kr/pr</p>
+              <p>Vekt = 5kr/kg</p>
+            </div>
+            <div>
+              <p>Priskalkulator for pakker</p>
+              <SingleParcelCalc  
+                weightHandler = {this.weightHandler} 
+                clickHandler = {this.clickHandler} 
+                countHandler = {this.countHandler} 
+                price = {this.state.price}>
+              </SingleParcelCalc>
+            </div>
+          </div>
+         
          
         </div>
         

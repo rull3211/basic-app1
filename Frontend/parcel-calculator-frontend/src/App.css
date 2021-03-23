@@ -8,7 +8,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 .App{
-  height: 100vh;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -24,7 +23,7 @@ input[type=number] {
 .Header{
   display: flex;
   align-items: center;
-  background-color: rgb(161, 161, 161);
+  background-color: rgb(173, 154, 154);
   flex: 12;
   width: 100vw;
   height: 100%;
@@ -37,6 +36,7 @@ input[type=number] {
 
 }
 .MainContent{
+  margin-top: 2%;
   height: 100%;
   flex: 88;
   display: flex;
@@ -45,11 +45,17 @@ input[type=number] {
   justify-content: center;
   align-items: center;
 }
+.Bg{
+  width: 90%;
+}
 .MainContentWrapper{
-  height: 80%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  background-color: beige;
+  padding-bottom: 2%;
 }
 .MatriseWrapper > div{
   width: fit-content;
@@ -57,7 +63,6 @@ input[type=number] {
   align-items: center;
 }
 .MatriseWrapper{
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +71,17 @@ input[type=number] {
 .SingleParcelCalculator{
   display: flex;
   justify-content: space-between;
+
 }
 .Kg{
   width: 100%;
+}
+.Info{
+  background-color: bisque;
+  margin-top: 1%;
+}
+.Info > p{
+  padding: 1%;
+  margin:0;
+  margin-bottom: 1%;
 }

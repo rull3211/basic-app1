@@ -7,6 +7,7 @@ const SingleParcelCalc = props =>{
     }
     return(
         <div className ="SingleParcelCalculator">
+            
             <div className ="VektWrapper">
                 <div className ="KgDescriptor">Vekt på pakken</div>
                 <select onChange = {props.weightHandler} className ="Kg">

@@ -17,7 +17,8 @@ class Matrise extends Component {
         
        
         return(
-            <div className = "MatriseWrapper">
+            <div className = "MatriseWrapper"> 
+                <p> Prismatrise for pakker</p>
                 {(<div>
                     <div className ="Row">
                         <div className = "MatriseElement">-</div>
