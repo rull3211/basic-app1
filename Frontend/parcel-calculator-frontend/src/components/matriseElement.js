@@ -5,7 +5,7 @@ const MatriseElement = props =>{
 
     return(
         <div className = "MatriseElement">
-            {props.price}
+            {props.price},-
         </div>
     )
 
