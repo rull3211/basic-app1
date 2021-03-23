@@ -27,13 +27,19 @@ class App extends Component{
   render(){
     return (
     <div className="App">
-      <Matrise></Matrise>
-      <SingleParcelCalc  
-        weightHandler = {this.weightHandler} 
-        clickHandler = {this.clickHandler} 
-        countHandler = {this.countHandler} 
-        price = {this.state.price}>
-      </SingleParcelCalc>
+      <div className = "Header">
+        <svg className ="Logo"></svg>
+      </div>
+      <div className = "MainContent">
+        <Matrise></Matrise>
+        <SingleParcelCalc  
+          weightHandler = {this.weightHandler} 
+          clickHandler = {this.clickHandler} 
+          countHandler = {this.countHandler} 
+          price = {this.state.price}>
+        </SingleParcelCalc>
+      </div>
+
     </div>)
   }
 

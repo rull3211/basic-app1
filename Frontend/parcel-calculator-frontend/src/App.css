@@ -18,3 +18,34 @@ input[type=number] {
   width: 6vw;
   border:1px solid;
 }
+.Header{
+  display: flex;
+  align-items: center;
+  background-color: rgb(161, 161, 161);
+  height: 12vh;
+  width: 100vw;
+}
+.Logo{
+  height: 10vh;
+  width: 17vw;
+  margin-left: 20px;
+  background-image: url("./Logos/Posten-Norge-Logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.MainContent{
+  display: flex;
+  flex-direction: column;
+  height: 88vh;
+  justify-content: center;
+  align-items: center;
+}
+.MatriseWrapper > div{
+  width : 36vw;
+}
+.MatriseWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
