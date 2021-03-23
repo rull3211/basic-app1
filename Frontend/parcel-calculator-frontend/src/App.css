@@ -76,6 +76,9 @@ input[type=number] {
 .Kg{
   width: 100%;
 }
+.AntallWrapper{
+  width: fit-content;
+}
 .Info{
   background-color: bisque;
   margin-top: 1%;
@@ -84,4 +87,10 @@ input[type=number] {
   padding: 1%;
   margin:0;
   margin-bottom: 1%;
+}
+.Antall{
+  width: 70%;
+}
+.AntallDescriptor{
+  width: 70%;
 }
