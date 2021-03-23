@@ -6,7 +6,7 @@ const SingleParcelCalc = props =>{
         liste.push(i)
     }
     return(
-        <div>
+        <div className ="SingleParcelCalculator">
             <div className ="VektWrapper">
                 <div className ="KgDescriptor">Vekt på pakken</div>
                 <select onChange = {props.weightHandler} className ="Kg">
@@ -20,8 +20,11 @@ const SingleParcelCalc = props =>{
                 <div className ="AntallDescriptor">Antall pakker</div>
                 <input onChange = {props.countHandler} className ="Antall" type="number" defaultValue = "1"></input>
             </div>
-            <button onClick = {props.clickHandler}>Kalkuler pris</button>
-            <div>Din sending vil koste {props.price} kroner</div>
+            <div className ="CalculatedWrapper">
+                <div>Din sending vil koste {props.price} kroner</div>
+                <button onClick = {props.clickHandler}>Kalkuler pris</button>
+            </div>
+            
         </div>
     )
 }

@@ -4,6 +4,7 @@ import './App.css';
 import Matrise from "./components/matrise"
 import SingleParcelCalc from './components/SingleParcelCalc';
 import ApiService from "./components/apiService"
+import postenLogo from "./Logos/Posten-Norge-Logo.svg"
 class App extends Component{
 
   state = {
@@ -28,16 +29,22 @@ class App extends Component{
     return (
     <div className="App">
       <div className = "Header">
-        <svg className ="Logo"></svg>
+        <img src = {postenLogo} className ="Logo" alt ="Posten logo"></img>
       </div>
       <div className = "MainContent">
-        <Matrise></Matrise>
-        <SingleParcelCalc  
-          weightHandler = {this.weightHandler} 
-          clickHandler = {this.clickHandler} 
-          countHandler = {this.countHandler} 
-          price = {this.state.price}>
-        </SingleParcelCalc>
+        <div className ="MainContentWrapper">
+          <Matrise></Matrise>
+        
+          <SingleParcelCalc  
+            weightHandler = {this.weightHandler} 
+            clickHandler = {this.clickHandler} 
+            countHandler = {this.countHandler} 
+            price = {this.state.price}>
+          </SingleParcelCalc>
+
+         
+        </div>
+        
       </div>
 
     </div>)
