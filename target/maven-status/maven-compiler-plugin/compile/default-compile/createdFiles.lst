@@ -1,5 +1,5 @@
-no\bring\demo\Logic.class
+no\bring\demo\logic\Logic.class
+no\bring\demo\model\PrisEntity.class
+no\bring\demo\controller\PriceController.class
 no\bring\demo\Application.class
-no\bring\demo\PriceController.class
-no\bring\demo\PrisReopsitory.class
-no\bring\demo\PrisEntity.class
+no\bring\demo\repository\PrisReopsitory.class

@@ -1,12 +1,18 @@
-package no.bring.demo;
+package no.bring.demo.logic;
 
-public class Logic {
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Logic { // En Logic klasse som inneholder logikken til kalkulatoren
+
+    // for utregning av en enkelsending
     public int singlePrice(int base, int packetp, int count , int weight,int weightp){
         int total = (weight*count * weightp) + (packetp*count) + base;
 
         return total;
     }
-
+    // For utregning av matrise
     public int[][] multiplePrice(int base, int packetp, int count , int weight,int weightp){
         int[][] liste = new int[weight][count];
         for(int i = 0; i < weight; i++){

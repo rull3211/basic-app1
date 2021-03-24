@@ -1,4 +1,4 @@
-package no.bring.demo;
+package no.bring.demo.model;
 
 
 import javax.persistence.Entity;

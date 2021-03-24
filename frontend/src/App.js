@@ -17,7 +17,7 @@ class App extends Component{
     this.setState({weight: event.target.value})
   }
   countHandler = (event) =>{
-    this.setState({count: event.target.value})
+    this.setState({count: Math.round(parseFloat(event.target.value))})
   }
   clickHandler = (event) =>{
     ApiService.getPrices(`sp?weight=${this.state.weight}&count=${this.state.count}&prisid=1`).then(response => {
@@ -49,7 +49,9 @@ class App extends Component{
                 weightHandler = {this.weightHandler} 
                 clickHandler = {this.clickHandler} 
                 countHandler = {this.countHandler} 
-                price = {this.state.price}>
+                price = {this.state.price}
+                count = {this.state.count}
+                >
               </SingleParcelCalc>
             </div>
           </div>

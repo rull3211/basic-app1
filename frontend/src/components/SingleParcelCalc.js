@@ -19,7 +19,7 @@ const SingleParcelCalc = props =>{
             
             <div className = "AntallWrapper">
                 <div className ="AntallDescriptor">Antall pakker</div>
-                <input onChange = {props.countHandler} className ="Antall" type="number" defaultValue = "1"></input>
+                <input onChange = {props.countHandler} className ="Antall" type="number" value = {props.count}></input>
             </div>
             <div className ="CalculatedWrapper">
                 <div>Din sending vil koste {props.price} kroner</div>

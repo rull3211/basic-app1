@@ -1,25 +1,21 @@
-.Row{
-  display: flex;
-}
+/* Fjerner pila oå dropdownmeny til kilovelgeren */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .App{
   align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-.MatriseElement{
-  width: 28%;
-  border:1px solid;
-}
+ /* Top level divs*/
 .Header{
   display: flex;
   align-items: center;
@@ -32,21 +28,16 @@ input[type=number] {
   margin-left: 20px;
   height: 70%;
   width: 15%;
-  
-
 }
 .MainContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 2%;
   height: 100%;
   flex: 88;
-  display: flex;
-  flex-direction: column;
   width: 100vw;
-  justify-content: center;
-  align-items: center;
-}
-.Bg{
-  width: 90%;
 }
 .MainContentWrapper{
   width: 32%;
@@ -57,16 +48,36 @@ input[type=number] {
   background-color: beige;
   padding-bottom: 2%;
 }
-.MatriseWrapper > div{
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
+.Bg{
+  width: 90%;
 }
 .MatriseWrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.MatriseWrapper > div{
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+.Row{
+  display: flex;
+}
+.MatriseElement{
+  width: 28%;
+  border:1px solid;
+}
+.Info{
+  background-color: bisque;
+  margin-top: 1%;
+}
+.Info > p{
+  padding: 1%;
+  margin:0;
+  margin-bottom: 1%;
 }
 .SingleParcelCalculator{
   display: flex;
@@ -78,15 +89,6 @@ input[type=number] {
 }
 .AntallWrapper{
   width: fit-content;
-}
-.Info{
-  background-color: bisque;
-  margin-top: 1%;
-}
-.Info > p{
-  padding: 1%;
-  margin:0;
-  margin-bottom: 1%;
 }
 .Antall{
   width: 70%;
