@@ -19,9 +19,4 @@ Tips:
 - `mvn spring-boot:run` (starts a servlet container with the app)
 - Request application on <http://localhost:8080/>
 
-### Upload the solution
-Upload a copy of the finished solution to the same page where you downloaded the task from, well before the interview (the day before). Send an email to [endre.midtgard.meckelborg@bring.com](mailto:endre.midtgard.meckelborg@bring.com) when this is done.
-
-### Presentation
-Bring a laptop and prepare to show the code, which frameworks you've used (how and why) and how you chose to structure the code.
 
